@@ -1,9 +1,9 @@
 object Form1: TForm1
   Left = 236
   Top = 214
-  Width = 983
-  Height = 596
   Caption = 'RTC Scripting Engine Tester'
+  ClientHeight = 557
+  ClientWidth = 967
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,20 +19,21 @@ object Form1: TForm1
     Left = 474
     Top = 0
     Width = 4
-    Height = 551
+    Height = 557
     ResizeStyle = rsUpdate
+    ExplicitHeight = 551
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
     Width = 474
-    Height = 551
+    Height = 557
     Align = alLeft
     Caption = 'Panel1'
     TabOrder = 0
     DesignSize = (
       474
-      551)
+      557)
     object Label1: TLabel
       Left = 10
       Top = 12
@@ -466,13 +467,13 @@ object Form1: TForm1
   object Panel2: TPanel
     Left = 478
     Top = 0
-    Width = 487
-    Height = 551
+    Width = 489
+    Height = 557
     Align = alClient
     TabOrder = 1
     DesignSize = (
-      487
-      551)
+      489
+      557)
     object lblTime: TLabel
       Left = 153
       Top = 12
@@ -538,8 +539,8 @@ object Form1: TForm1
     Group = FunctionGroup
     FunctionName = 'Now'
     OnExecute = FnNowExecute
-    Left = 540
-    Top = 148
+    Left = 516
+    Top = 60
   end
   object FnRandom: TRtcFunction
     Group = FunctionGroup
@@ -556,7 +557,7 @@ object Form1: TForm1
     Top = 190
   end
   object DummyConnection: TRtcHttpServer
-    Left = 480
-    Top = 48
+    Left = 584
+    Top = 96
   end
 end
