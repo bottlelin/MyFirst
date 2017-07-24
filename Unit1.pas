@@ -29,6 +29,7 @@ type
     FnRandom: TRtcFunction;
     FnPolyArea: TRtcFunction;
     DummyConnection: TRtcHttpServer;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure FnTimeExecute(Sender: TRtcConnection;
       Param: TRtcFunctionInfo; Result: TRtcValue);
@@ -41,6 +42,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FnPolyAreaExecute(Sender: TRtcConnection;
       Param: TRtcFunctionInfo; Result: TRtcValue);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -108,6 +110,11 @@ procedure TForm1.FnTimeExecute(Sender: TRtcConnection; Param: TRtcFunctionInfo; 
   begin
   Result.asDateTime:=Time;
   end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  Caption:='My First' ;
+end;
 
 procedure TForm1.FnDateExecute(Sender: TRtcConnection; Param: TRtcFunctionInfo; Result: TRtcValue);
   begin

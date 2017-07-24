@@ -463,6 +463,15 @@ object Form1: TForm1
       WantTabs = True
       WordWrap = False
     end
+    object Button2: TButton
+      Left = 393
+      Top = 5
+      Width = 75
+      Height = 25
+      Caption = 'Button2'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
   end
   object Panel2: TPanel
     Left = 478
